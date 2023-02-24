@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.container {
+    max-width: 20rem;
+    margin-top: 3rem;   
+}
+
+.sedans, .suvs, .luxury {
+    padding: 2.5rem;
+}
+
+.container .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0.5rem 0 0;    
+}
+
+.container .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-top: 1.5rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    margin: 1.5rem 0;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    outline: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.container button:hover {
+    color:hsl(0, 0%, 95%) !important;
+    border: 1.5px solid hsl(0, 0%, 95%);
+    transition: 0.3s ease-out;
+}
+
+.container .sedans button {
+    color: hsl(31, 77%, 52%);
+}
+.container .sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container .suvs button {
+    color:hsl(184, 100%, 22%);
+}
+.container .suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .luxury button {
+    color: hsl(179, 100%, 13%);
+}
+.container .luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .sedans {
+        min-width: 16.5rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .container .suvs {
+        min-width: 16.5rem;
+        
+    }
+
+    .container .luxury {
+        min-width: 16.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .container button {
+        margin-top: 2rem;
+    }
+}
